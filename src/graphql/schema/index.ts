@@ -1,6 +1,6 @@
 const typeDefs = `#graphql
     type Task {
-        id: ID!
+        id: Int!
         label: String!
         status: String!
         assignee: TeamMember

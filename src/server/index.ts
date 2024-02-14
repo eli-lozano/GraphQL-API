@@ -1,11 +1,11 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
-import { typeDefs } from './graphql/schema/index.js';
+import { typeDefs } from '../graphql/schema/index.js';
 import { addMocksToSchema } from "@graphql-tools/mock";
 import { makeExecutableSchema } from "@graphql-tools/schema";
-import { taskMocks } from './data/mocks/task-mocks.js';
-import { teamMemberMocks } from './data/mocks/team-member-mocks.js';
-import { MAX_TASK_ID_MOCK } from './common/constants.js';
+import { taskMocks } from '../data/mocks/task-mocks.js';
+import { teamMemberMocks } from '../data/mocks/team-member-mocks.js';
+import { MAX_TASK_ID_MOCK } from '../common/constants.js';
 
 const mocks = {
     Query: () => ({
